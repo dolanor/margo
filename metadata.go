@@ -11,6 +11,7 @@ type Metadata interface {
 }
 
 type Authorer interface {
+	Author() string
 	Authors() []string
 	SoftwareEditors() []string
 }
@@ -29,5 +30,6 @@ type Licenser interface {
 }
 
 type Commenter interface {
+	Comment() string
 	Comments() []string
 }
